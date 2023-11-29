@@ -1,7 +1,9 @@
 package main
 
-import "enigmacamp.com/be-enigma-laundry/delivery"
+import rest_client "enigmacamp.com/be-enigma-laundry/rest-client"
 
 func main() {
-	delivery.NewServer().Run()
+	// delivery.NewServer().Run()
+	// rest_client.SampleRestClientBuiltIn()
+	rest_client.SampleRestClientResty()
 }
