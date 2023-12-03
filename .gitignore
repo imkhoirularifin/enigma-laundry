@@ -2,3 +2,4 @@ go.sum
 logger.log
 /assets/
 .env
+/db/password.txt

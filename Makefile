@@ -7,4 +7,10 @@ createdb:
 dropdb:
 	docker exec -it postgres16 dropdb enigma_laundry_docker
 
-.PHONY: postgres createdb dropdb
+migrateup:
+	migrate -path db/migration -database "postgresql://root:167916@localhost:9090/enigma_laundry_docker?sslmode=disable" -verbose up
+
+migratedown:
+	migrate -path db/migration -database "postgresql://root:167916@localhost:9090/enigma_laundry_docker?sslmode=disable" -verbose down
+
+.PHONY: postgres createdb dropdb migrateup migratedown
