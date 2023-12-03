@@ -12,6 +12,7 @@ require (
 
 require (
 	github.com/go-resty/resty/v2 v2.10.0 // indirect
+	github.com/google/uuid v1.4.0 // indirect
 	github.com/stretchr/objx v0.5.0 // indirect
 )
 
